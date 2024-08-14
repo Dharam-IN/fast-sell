@@ -31,6 +31,14 @@
 
             const authenticationResult = await SimpleWebAuthnBrowser.startRegistration(options);
             console.log(authenticationResult);
+
+            await fetch("/register-verify", {
+                method: "POST",
+                "headers": {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({userId, cred: authenticationResult})
+            })
         })
 
     </script>
