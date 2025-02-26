@@ -16,6 +16,11 @@ export default {
         accent: "var(--accent)",
         border: "var(--border)"
       },
+      spacing: {
+        SectionLgGap: "var(--section-lg-gap)",
+        SectionMobileGap: "var(--section-mobile-gap)"
+      }
+
     },
   },
   plugins: [],
