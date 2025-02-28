@@ -97,7 +97,7 @@ const HeaderDetectLocation = () => {
   return (
     <>
       <div className='flex flex-col cursor-pointer' onClick={handleClickOpen}>
-        <h4 className='text-xl font-bold'>Delivery in 7 Minutes</h4>
+        <h4 className='md:text-xl text-lg font-bold'>Delivery in 7 Minutes</h4>
         <span className='flex text-sm'>Jaipur, Rajasthan, india <ArrowDropDownIcon /></span>
       </div>
       <SimpleDialog

@@ -48,22 +48,22 @@ const Index = () => {
                     }}
                     modules={[Navigation]}
                     breakpoints={{
-                        320: { slidesPerView: 3 },
+                        320: { slidesPerView: 4 },
                         768: { slidesPerView: 5 },
                         1024: { slidesPerView: 8 },
                     }}
                     className='mySwiper'
                 >
                     {categories.map((category, index) => (
-                        <SwiperSlide key={index}>
-                            <Link href={"/"} className='flex flex-col items-center bg-gray-100 px-6 py-5 rounded-lg'>
+                        <SwiperSlide key={index} className='!h-auto'>
+                            <Link href={"/"} className='flex flex-col items-center bg-gray-100 px-3 md:px-6 py-2 md:py-5 rounded-lg h-full'>
                                 <Image
                                     src={category.icon}
                                     alt={category.name}
                                     width={80}
                                     height={80}
                                 />
-                                <span className='text-center text-base font-semibold mt-2'>{category.name}</span>
+                                <span className='text-center text-sm md:text-base font-semibold mt-2'>{category.name}</span>
                             </Link>
                         </SwiperSlide>
                     ))}

@@ -13,14 +13,14 @@ const index = (props: sectionTitleProp) => {
         <>
             {/* <h1 className="text-2xl font-bold mb-4">{props.title}</h1> */}
 
-            <div className={`flex w-full flex-col mb-3 ${props.align === "left" ? "" : "items-center justify-center text-center"}`}>
+            <div className={`flex w-full flex-col mb-4 ${props.align === "left" ? "" : "items-center justify-center text-center"}`}>
                 {props.preTitle && (
                     <div className="text-sm font-bold tracking-wider text-gold uppercase">
                         {props.preTitle}
                     </div>
                 )}
                 {props.title && (
-                    <h2 className={`${props.width === "full" ? "w-full" : "max-w-2xl"} mt-3 text-3xl text-capitalize font-bold leading-snug tracking-tight text-dark lg:leading-tight lg:text-3xl`}>
+                    <h2 className={`${props.width === "full" ? "w-full" : "max-w-2xl"} mt-3 text-2xl text-capitalize font-bold leading-snug tracking-tight text-dark lg:leading-tight lg:text-3xl`}>
                         {props.title}
                     </h2>
                 )}

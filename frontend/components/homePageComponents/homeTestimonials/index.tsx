@@ -72,7 +72,7 @@ const Index: React.FC = () => {
     };
 
     return (
-        <section className='bg-gray-100 py-14'>
+        <section className='bg-gray-100 py-SectionMobileGap lg:py-SectionLgGap'>
             <SectionTitle
                 title="What Our Clients Say"
             >
