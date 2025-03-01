@@ -1,11 +1,10 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import { useTheme } from '@mui/material/styles';
+// import { useTheme } from '@mui/material/styles';
 import HeaderDetectLocation from '@/components/detectLocation/HeaderDetectLocation'
 import Link from 'next/link';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import Image from 'next/image';
 import PersonIcon from '@mui/icons-material/Person';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
@@ -14,7 +13,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
-  const theme = useTheme();
+  // const theme = useTheme();
   const [mobileSticky, setMobileSticky] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const pathname = usePathname()

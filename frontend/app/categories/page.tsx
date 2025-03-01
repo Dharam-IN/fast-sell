@@ -74,6 +74,7 @@ const CategoryPage: React.FC = () => {
         ];
         setCategories(dummyData);
       } catch (err) {
+        console.error(err)
         setError('Failed to load categories. Please try again later.');
       } finally {
         setLoading(false);

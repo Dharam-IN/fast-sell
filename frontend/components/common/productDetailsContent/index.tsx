@@ -1,14 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
-import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
-import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
-import BreadCrumb from '@/components/common/breadCrumb'
+import React from 'react';
 
 const Index: React.FC = () => {
-    const [price, setPrice] = useState(752);
-    const [discount, setDiscount] = useState(6);
-    const [mrp, setMrp] = useState(800);
 
     return (
         <>
@@ -31,7 +25,7 @@ const Index: React.FC = () => {
                         </ul>
                     </li>
                     <li><strong>Packaging Type:</strong> Pack</li>
-                    <li><strong>Manufacturer's Address:</strong> Jaipur Zila Dugdh Utpadak Sahakari Sangh Ltd., Jaipur - 15</li>
+                    <li><strong>Manufacturer&apos;s Address:</strong> Jaipur Zila Dugdh Utpadak Sahakari Sangh Ltd., Jaipur - 15</li>
                     <li><strong>Country of Origin:</strong> India</li>
                     <li><strong>Customer Care Details:</strong> Email: info@blinkit.com</li>
                     <li><strong>Seller:</strong> ASVAH RETAIL PRIVATE LIMITED</li>

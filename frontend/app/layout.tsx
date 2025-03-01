@@ -5,8 +5,6 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { Roboto } from 'next/font/google';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from "./theme";
-import Header from '@/components/layouts/Header'
-import Footer from "@/components/layouts/Footer";
 import AppClientLayer from "@/components/layouts/AppClientLayer";
 
 const roboto = Roboto({

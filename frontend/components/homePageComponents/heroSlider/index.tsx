@@ -52,6 +52,7 @@ const Index: React.FC = () => {
 
         setSlides(response);
       } catch (err) {
+        console.error(err)
         setError('Failed to load slides. Please try again later.');
       } finally {
         setLoading(false);

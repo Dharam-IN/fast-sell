@@ -1,11 +1,10 @@
 import React from 'react';
 import { ProductDataProps } from '@/types/commonInterface'
 import Image from 'next/image';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Link from 'next/link';
 
-const index = ({ id, badge, category, image, name, offer, price, title, time, currency }: ProductDataProps) => {
+const index = ({ image, offer, price, title, time, currency }: ProductDataProps) => {
     return (
         <>
             {/* <div key={id} className="border p-4 rounded-lg shadow-md">

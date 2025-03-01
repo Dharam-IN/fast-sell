@@ -1,15 +1,13 @@
 'use client'
 import Link from 'next/link'
 import React from 'react'
-import PersonIcon from '@mui/icons-material/Person';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import Image from 'next/image';
 import KeyboardBackspaceOutlinedIcon from '@mui/icons-material/KeyboardBackspaceOutlined';
 import { useRouter } from 'next/navigation';
 import { handleBack } from '@/services/helper';
 
-const page = () => {
+const SearchHeader = () => {
 
     const router = useRouter()
 
@@ -59,4 +57,4 @@ const page = () => {
   )
 }
 
-export default page
+export default SearchHeader

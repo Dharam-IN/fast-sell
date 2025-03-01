@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import { Swiper as SwiperClass } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
@@ -15,9 +16,10 @@ import KeyboardBackspaceOutlinedIcon from '@mui/icons-material/KeyboardBackspace
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { handleBack } from '@/services/helper';
+import Image from 'next/image';
 
 const Index: React.FC = () => {
-    const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+    const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
 
     const images = [
         'https://swiperjs.com/demos/images/nature-1.jpg',
@@ -32,7 +34,7 @@ const Index: React.FC = () => {
         'https://swiperjs.com/demos/images/nature-10.jpg',
     ];
 
-    const router = useRouter()
+    const router = useRouter();
 
     return (
         <>
@@ -53,9 +55,11 @@ const Index: React.FC = () => {
                 >
                     {images.map((src, index) => (
                         <SwiperSlide key={index}>
-                            <img
+                            <Image
                                 src={src}
                                 alt={`Slide ${index + 1}`}
+                                width={800}
+                                height={400}
                                 className="w-full h-96 object-cover rounded-lg"
                             />
                         </SwiperSlide>
@@ -97,9 +101,11 @@ const Index: React.FC = () => {
             >
                 {images.map((src, index) => (
                     <SwiperSlide key={index}>
-                        <img
+                        <Image
                             src={src}
                             alt={`Thumbnail ${index + 1}`}
+                            width={200}
+                            height={100}
                             className="w-full h-24 object-cover cursor-pointer hover:opacity-80"
                         />
                     </SwiperSlide>

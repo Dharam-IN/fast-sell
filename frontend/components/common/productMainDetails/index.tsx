@@ -1,14 +1,18 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import BreadCrumb from '@/components/common/breadCrumb'
 
 const Index: React.FC = () => {
-    const [price, setPrice] = useState(752);
-    const [discount, setDiscount] = useState(6);
-    const [mrp, setMrp] = useState(800);
+    // const [price, setPrice] = useState(752);
+    // const [discount, setDiscount] = useState(6);
+    // const [mrp, setMrp] = useState(800);
+    const price = 752;
+    const discount = 6;
+    const mrp = 800;
+
 
     return (
         <>

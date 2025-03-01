@@ -76,7 +76,7 @@ const Index: React.FC = () => {
             <SectionTitle
                 title="What Our Clients Say"
             >
-                Our clients trust us to find the best loan options that meet their needs. Here's what they have to say!
+                Our clients trust us to find the best loan options that meet their needs. Here&apos;s what they have to say!
             </SectionTitle>
             <div className="homeTestimonialsCarouselContainer">
                 <div className="carousel-track">
