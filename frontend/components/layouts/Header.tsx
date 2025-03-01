@@ -18,7 +18,6 @@ const Header = () => {
   const [mobileSticky, setMobileSticky] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const pathname = usePathname()
-  console.log(pathname)
 
   const handleStickyNavbar = () => {
 
@@ -49,7 +48,8 @@ const Header = () => {
           <div className='xl:w-[25%] lg:w-[38%] w-[70%]'>
             <div className='flex gap-3 items-center'>
               <Link href={"/"} className='lg:block hidden'>
-                <Image src={"https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.53.3/images/header/primary-logo.svg"} width={150} height={50} alt='logo' />
+                {/* <Image src={""} width={150} height={50} alt='logo' /> */}
+                <h3 className='uppercase text-3xl font-bold'>LOGO</h3>
               </Link>
               <HeaderDetectLocation />
             </div>
@@ -57,10 +57,11 @@ const Header = () => {
 
           <div className='xl:w-[55%] lg:w-[38%] w-full lg:mt-0 md:mt-6 mt-3'>
             <div className='w-full relative'>
-              <input type='text' placeholder='Search "Anything"' className='w-full border border-border block py-3 rounded-lg bg-gray-100 md:pl-14 pl-11 pe-3'/>
-              <button className='pl-3 absolute top-1/2 left-0 -translate-y-1/2'>
-                <SearchIcon />
-              </button>
+              <Link href={'/search'} className='w-full border border-border block py-3 rounded-lg bg-gray-100'>
+                <button className='pl-3'>
+                  <SearchIcon />
+                </button>
+              </Link>
             </div>
           </div>
 

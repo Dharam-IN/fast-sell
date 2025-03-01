@@ -30,3 +30,8 @@ export interface ProductDataProps {
     time: string;
     currency: string;
 }
+
+export interface ProductBreadCrumbProps{
+    categoryname: string;
+    productname: string;
+}

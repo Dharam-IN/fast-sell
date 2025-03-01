@@ -47,7 +47,7 @@ const Index: React.FC = () => {
                 altText: 'Slide 2',
               },
             ]);
-          }, 1000);
+          }, 0);
         });
 
         setSlides(response);

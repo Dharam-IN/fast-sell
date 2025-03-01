@@ -7,6 +7,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from "./theme";
 import Header from '@/components/layouts/Header'
 import Footer from "@/components/layouts/Footer";
+import AppClientLayer from "@/components/layouts/AppClientLayer";
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -25,6 +26,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
       <body
@@ -32,9 +35,9 @@ export default function RootLayout({
       >
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-            <Header />
+            <AppClientLayer>
             {children}
-            <Footer/>
+            </AppClientLayer>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>

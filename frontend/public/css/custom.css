@@ -86,6 +86,7 @@
 
 
 
+
 /* HOME CATEGORY SLIDER */
 .categoryHeroCustomPrev .category-prev,
 .categoryHeroCustomPrev .category-next {
@@ -250,6 +251,33 @@
     left: -100%;
   }
 }
+
+
+
+
+/* PRODUCT DETAILS CSS */
+.productDetailsSwiperButtons .home-prev {
+  left: 20px;
+}
+
+.productDetailsSwiperButtons .home-next {
+  right: 20px;
+}
+.productDetailsSliderThumbs .swiper-slide{
+  border: 3px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1px;
+}
+.productDetailsSliderThumbs .swiper-slide img{
+  border-radius: 10px;
+}
+.productDetailsSliderThumbs .swiper-slide.swiper-slide-thumb-active{
+  border: 3px solid black;
+}
+
+
+
 
 /* ==================== Media Queries ==================== */
 @media (min-width: 1430px) {}
